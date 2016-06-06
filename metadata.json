@@ -1,24 +1,15 @@
 {
-	"name": "cristifalcas-kibana",
-	"version": "3.0.0",
+	"name": "ConclusionMC-kibana",
+	"version": "3.0.1",
 	"author": "Falcas Cristian",
 	"license": "Apache-2.0",
-	"project_page": "https://github.com/cristifalcas/puppet-kibana",
-	"source": "git@github.com:cristifalcas/puppet-kibana.git",
-	"issues_url": "https://github.com/cristifalcas/puppet-kibana/issues",
+	"project_page": "https://github.com/ConclusionMC/puppet-kibana",
+	"source": "git@github.com:ConclusionMC/puppet-kibana.git",
+	"issues_url": "https://github.com/ConclusionMC/puppet-kibana/issues",
 	"summary": "Installs and configures Kibana4 from packages.",
 	"dependencies": [{
 			"name": "puppetlabs/stdlib",
 			"version_requirement": "4.x"
-		},{
-			"name": "puppetlabs/apache",
-			"version_requirement": "1.x"
-		},{
-			"name": "jfryman/nginx",
-			"version_requirement": "0.x"
-		},{
-			"name": "leinaddm/htpasswd",
-			"version_requirement": "0.x"
 		}
 	],
 	"operatingsystem_support": [],
