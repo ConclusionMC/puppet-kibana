@@ -40,18 +40,22 @@ As stated above, the apache and nginx modules are no longer a dependency of this
 This is how we use them:
 
 In our Puppetfile (we use librarian-puppet) we add this rule:
+
     mod 'jfryman-nginx', '0.3.0'
 and then install it:
+
     $ librarian-puppet install
 and add the module to our .gitignore.
 
 Create a role and profile for both kibana and nginx:
 modules/role/manifests/nginx/server.pp:
+
     class role::nginx::server
     {
       include profile::nginx::server
     }
 modules/profile/manifests/nginx/server.pp:
+
     class profile::nginx::server
     {
       class { 'nginx':
@@ -72,11 +76,13 @@ modules/profile/manifests/nginx/server.pp:
       }
     }
 modules/role/manifests/kibana/server.pp:
+
     class role::kibana::server
     {
       include profile::kibana::server
     }
 modules/profile/manifests/kibana/server.pp:
+
     class profile::kibana::server
     {
       class { 'kibana':
@@ -94,9 +100,11 @@ modules/profile/manifests/kibana/server.pp:
     }
 
 We use a global site.pp which includes the roles for each node.yaml:
+
     hiera_include('roles')
 
 And in the node.yaml we have this:
+
     ---
     roles:
       - role::kibana::server
