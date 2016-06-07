@@ -1,7 +1,5 @@
 # kibana
 
-[![Build Status](https://travis-ci.org/cristifalcas/puppet-kibana.png?branch=master)](https://travis-ci.org/cristifalcas/puppet-kibana)
-
 #### Table of Contents
 
 1. [Overview](#overview)
@@ -112,7 +110,7 @@ And in the node.yaml we have this:
 
     kibana::server_host: '127.0.0.1'
     kibana::server_port: 5601
-    kibana::elasticsearch_url: 'http://elastic01.example.com:9200'
+    kibana::elasticsearch_url: 'http://elastic.example.com:9200'
 
     nginx::manage_repo: false
     nginx::config:
