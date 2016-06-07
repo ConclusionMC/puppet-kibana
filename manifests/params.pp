@@ -23,8 +23,8 @@ class kibana::params {
   $elasticsearch_requestTimeout = 300000
   $elasticsearch_shardTimeout = 0
   $elasticsearch_startupTimeout = 5000
-  $pid_file = '/var/run/kibana.pid'
-  $logging_dest = 'stdout'
+  $pid_file = '/var/run/kibana/kibana.pid'
+  $logging_dest = '/var/log/kibana/kibana.log'
   $logging_silent = false
   $logging_quiet = false
   $logging_verbose = false
