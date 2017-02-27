@@ -1,12 +1,12 @@
 {
 	"name": "ConclusionMC-kibana",
-	"version": "3.1.0",
+	"version": "5.0.2",
 	"author": "Falcas Cristian",
 	"license": "Apache-2.0",
 	"project_page": "https://github.com/ConclusionMC/puppet-kibana",
 	"source": "git@github.com:ConclusionMC/puppet-kibana.git",
 	"issues_url": "https://github.com/ConclusionMC/puppet-kibana/issues",
-	"summary": "Installs and configures Kibana4 from packages.",
+	"summary": "Installs and configures Kibana from packages.",
 	"tags": [ "kibana",
 		"elasticsearch"
 	],
