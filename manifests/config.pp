@@ -23,4 +23,12 @@ class kibana::config {
     group   => 'kibana',
     before  => Service['kibana'],
   }
+
+  file { '/var/log/kibana':
+    ensure => directory,
+    owner  => 'kibana',
+    group  => 'kibana',
+    before  => Service['kibana']
+  }
+
 }
